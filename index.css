@@ -1,0 +1,472 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+.maincontent {
+    position: relative;
+    top: 6rem; /* To offset for fixed header */
+    margin-bottom: 6rem;
+}
+
+/* Header - Navigation */
+
+header {
+    position: fixed;
+    z-index: 100;
+    height: 6rem;
+    width: 100%;
+    border: 0.5px solid transparent;
+    background-color: black;
+}
+
+header .navigation {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#logo {
+   margin-left: 0.7rem;
+   flex: 1;
+}
+
+#logo img{
+    width:  4.5rem;
+    height: auto;
+    cursor: pointer;
+}
+
+header ul{
+    display: flex;
+}
+
+ul li{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+
+ul li:last-child{
+    margin-right: 3rem;
+}
+
+ul li a{
+    text-decoration: none;
+    color: lightgray;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+a:hover {
+    color: darkgray;
+    cursor: pointer;
+}
+
+#button{
+    border-radius: 5px;
+    padding: 0.8rem;
+    background-color:black;
+    border: 0.5px solid white;
+    text-align: center;
+    transition: 0.7s;
+}
+
+#button a{
+    color: darkred;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+#button:hover{
+    background-color:white;
+    border:2px solid darkred;
+    font-weight: 500;
+    color: black;
+}
+
+/* Main content */
+
+    /* Banner */
+
+.containerbanner {
+    background-image: url("https://i2-prod.manchestereveningnews.co.uk/incoming/article21535603.ece/ALTERNATES/s1200d/0_GettyImages-1235083415.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 42rem;
+}
+
+.logoname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 50%;
+  width: 100%;
+  background-image: linear-gradient(black, transparent);
+}
+
+.logoname img {
+    width: 5rem;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(140, 19, 19, 0.76);
+}
+
+
+.textcontainer h1{
+    font-size: 4.5rem;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    color: lightgrey;
+    text-shadow: 2px 2px black;
+}
+
+.regsection {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.fade {
+    background-image: linear-gradient(transparent, black);
+    width: 100%;
+    height: 50%;
+}
+
+   /* Second part of the page */
+
+   .whitespace {
+      width: 100%;
+      height: 2rem;
+      color: white;
+   }
+   
+   .secondsection {
+      background-color: #f8f8f8;
+      width: 100%;
+      border-radius: 5px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-image: url("https://static.standard.co.uk/2022/03/15/19/2022-03-15T172625Z_1107313512_UP1EI3F1CFY2Q_RTRMADP_3_SOCCER-CHAMPIONS-MUN-ATM-REPORT.JPG");
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+
+   .sectionname {
+      font-size: 4rem;
+      color: black;
+      text-shadow: 2px 2px darkred;
+      padding: 1rem;
+      text-align: center;
+      font-family: 'PT Sans', sans-serif;
+   }
+
+   .products {
+      width:90%;
+      padding: 2rem;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+   }
+
+    .sell {
+        border-radius: 5px;
+        width: 20%;
+        height: 20rem;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(62, 12, 12, 0.849);
+        margin: 2.5rem;
+        /* border: 3rem solid white; */
+    }
+    
+    .stockimage {
+        width: 100%;
+        height: 100%;
+        background-image: url("https://www.soccerlord.se/wp-content/uploads/2020/05/Retro-Manchester-United-Home-Football-Shirt-1984.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-position-x: center;
+    }
+
+    .stocktwo {
+        background-image: url("https://diamu.com.bd/wp-content/uploads/2021/10/Manchester-United-2021-22-Third-Jersey-1.jpg");
+    }
+    .stockthree {
+        background-image: url("https://www.sportsdirect.com/images/imgzoom/37/37731108_xxl.jpg");
+    }
+    .stockfour {
+        background-image: url("https://img.fruugo.com/product/9/12/166216129_max.jpg");
+    }
+    .stockfive {
+        background-image: url("https://icdn.caughtoffside.com/wp-content/uploads/2022/06/United-away-jersey-1.jpg");
+    }
+    .stocksix {
+        background-image: url("https://www.sportsdirect.com/images/imgzoom/37/37731615_xxl.jpg");
+    }
+
+    .firstp , .secondp {
+        width: 100%;
+        height: 50%;
+    }
+
+    .secondp {
+        background-image: linear-gradient(transparent, black); 
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+
+    .firstp,.secondp:hover {
+        background-image: linear-gradient(transparent,transparent);
+    }
+
+    .secondpara {
+        padding: 1rem;
+        border-radius: 132px;
+        background-color: black;
+        box-shadow: 0 0 20px rgba(138, 3, 3, 0.881);
+        margin-bottom: 1.5rem;
+        transition: 0.8s;
+    }
+
+    .secondp span{
+        color: darkred;
+        font-size: 1rem;
+        font-family: "PT Sans", sans-serif;
+    }
+
+    .secondpara:hover{
+        background-color:white;
+        border:2px solid darkred;
+        font-weight: 500;
+        color: black;
+        cursor: pointer;
+    }
+
+ 
+    /* Third part of the page */
+
+
+    .thirdsection {
+        background-color: #f8f8f8;
+        width: 100%;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .thirdcontainer {
+        margin: 3%;
+        width: 97%;
+    }
+
+    .topselling {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .topselling h2 {
+        font-size: 3rem;
+        font-family: 'Bebas Neue', cursive;
+        text-decoration-line: underline;
+        text-decoration-color: red;
+        text-decoration-thickness: 0.5rem;
+    }
+
+    .playercontent {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .playersell {
+        width: 26%;
+        height: 20rem;
+        border: 1rem solid white;
+        border-radius: 5px;
+        box-shadow: 0 0 20px rgba(31, 10, 10, 0.881);
+    }
+
+    .sellcontainer {
+        width: 100%;
+        height: 100%;
+        background-size:cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-position-x: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .playerone {
+       background-image: url("https://cf.ijersey.ru/upload/20220815/1660547288143473.jpg");
+    }
+    .playertwo {
+        background-image: url("https://icdn.strettynews.com/wp-content/uploads/2022/07/Screenshot-2022-07-08-at-09.56.18.jpg");
+    }
+    .playerthree {
+        background-image: url("https://www.footballshirtculture.com/images/manchester_united_2022_2023_third_kit.jpg");  
+    }
+
+    .textplayer {
+        height: 50%;
+        display: flex;
+        justify-content: start;
+        align-items: flex-start; 
+        padding: 1rem;
+        font-size: 1.5rem;
+        font-family: 'Bebas Neue', cursive;
+        text-decoration-line: underline;
+        text-decoration-color: red;
+        text-decoration-thickness: 0.1rem;
+        color: white;
+    }
+
+    .buyplayer {
+        height: 50%;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+
+    .buyprice {
+        padding: 1rem;
+        border-radius: 132px;
+        background-color: white;
+        box-shadow: 0 0 20px rgba(25, 7, 7, 0.984);
+        margin-bottom: 1.5rem;
+        transition: 0.8s;
+    }
+
+    .buyplayer span {
+        color: black;
+        font-size: 1rem;
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    .buyprice:hover {
+        color: white;
+        background-color: darkred;
+        cursor: pointer;
+    }
+
+    .whitespaceend {
+        width: 100%;
+        height: 1rem;
+        color: white;
+    }
+
+/* Footer section */
+
+   footer {
+      margin-top: 1rem;
+      width:100%;
+      background-color: black;
+      height: 9rem;
+   }
+
+   .footercontainer {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+      width: 100%;  
+   }
+
+   .rightspart , .socialpart {
+    height: 50%;
+    width: 100%;
+ }
+
+   .socialpart {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   .socialmedia, .sponsors {
+      height: 100%;
+      width: 50%;
+   }
+
+   .socialmediacon {
+      width: 98%;
+      margin: 2%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: start;
+   }
+
+   .sponsorscon {
+    width: 98%;
+    margin: 2%; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+ }
+
+   .media {
+      width: 8%;
+      height: 3.5rem;
+      margin-left: 1rem;
+   }
+
+   .media img {
+      width: 100%;
+      height: 100%;
+   }
+
+   .teamviewer{
+      width: 32%;
+   }
+
+   .dxc {
+      width: 17%;
+   }
+
+   .rightspart {
+      display: flex;
+   }
+
+   .rightsreserved {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      margin-left: 2rem;
+   }
+
+   .rightspart span {
+      color: white;
+      font-size: 0.95rem;
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 0.02rem;
+   }
+
