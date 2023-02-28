@@ -30,6 +30,7 @@ header {
 
 header .navigation {
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,10 +58,6 @@ ul li{
     flex-wrap: wrap;
     margin-right: 2rem;
     text-decoration: none;
-}
-
-ul li:last-child{
-    margin-right: 3rem;
 }
 
 ul li a{
@@ -98,6 +95,80 @@ a:hover {
     font-weight: 500;
     color: black;
 }
+
+@media only screen and (min-width: 280px) and (max-width: 470px){
+    #logo {
+        display: none;
+    }
+
+    ul li {
+        margin: 0 0.5rem;
+        text-align: center;
+    }
+    
+    ul li a{
+        font-size: 1rem;
+    }
+
+    #button {
+        padding: 0.7rem 0.5rem;
+    }
+
+    #button a {
+        font-size: 0.9rem;
+        letter-spacing: 0.03rem;
+        white-space: nowrap;
+    }
+
+    .navitems {
+        width: 100%;
+    }
+
+    .navitems ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (min-width: 470px) and (max-width: 635px) {
+    #button a {
+        font-size: 0.9rem;
+    } 
+
+    #button {
+        padding: 0.6rem 1rem;
+    }
+
+    ul li {
+        text-align: center;
+    }
+
+    ul li a {
+        font-size: 1rem;
+    }
+
+    .navitems {
+        width: 100%;
+    }
+
+    .navitems ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    ul li:last-child {
+        margin-right: 0;
+    }
+
+}
+  
 
 /* Main content */
 
@@ -184,8 +255,7 @@ a:hover {
    }
 
    .products {
-      width:90%;
-      padding: 2rem;
+      width:100%;
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
@@ -198,7 +268,6 @@ a:hover {
         overflow: hidden;
         box-shadow: 0 0 20px rgba(62, 12, 12, 0.849);
         margin: 2.5rem;
-        /* border: 3rem solid white; */
     }
     
     .stockimage {
@@ -246,7 +315,7 @@ a:hover {
     .secondpara {
         padding: 1rem;
         border-radius: 132px;
-        background-color: black;
+        background-color: white;
         box-shadow: 0 0 20px rgba(138, 3, 3, 0.881);
         margin-bottom: 1.5rem;
         transition: 0.8s;
@@ -259,13 +328,42 @@ a:hover {
     }
 
     .secondpara:hover{
-        background-color:white;
+        background-color:grey;
         border:2px solid darkred;
         font-weight: 500;
         color: black;
         cursor: pointer;
     }
+    
+    @media only screen and (max-width: 400px) {
+       .sell {
+        width: 70%;
+       }
+    }
+    
+    @media only screen and (min-width: 400px) and (max-width: 560px) {
+       .sell { 
+           width: 50%;
+        }
+    }
 
+    @media only screen and (min-width: 560px) and (max-width:635px) {
+        .sell {
+            width: 40%;
+        }
+    }
+    
+    @media only screen and (min-width: 635px) and (max-width: 1000px ) {
+        .sell {
+           width: 28%;
+        }
+     }
+
+    @media only screen and (min-width: 1000px) and (max-width: 1250px) {
+        .sell {
+            width: 25%
+        }
+    } 
  
     /* Third part of the page */
 
@@ -382,13 +480,49 @@ a:hover {
         color: white;
     }
 
+    @media only screen and (max-width: 400px) {
+        .playersell {
+         width: 70%;
+        }
+     }
+     
+     @media only screen and (min-width: 400px) and (max-width: 560px) {
+        .playersell { 
+            width: 60%;
+         }
+     }
+ 
+     @media only screen and (min-width: 560px) and (max-width:635px) {
+        .playersell {
+             width: 50%;
+         }
+     }
+     
+     @media only screen and (min-width: 635px) and (max-width: 1000px ) {
+        .playersell {
+            width: 40%;
+         }
+      }
+ 
+     @media only screen and (min-width: 1000px) and (max-width: 1250px) {
+         .playersell {
+             width: 40%
+         }
+     }
+     
+     @media only screen and (min-width: 300px) and (max-width: 1250px) {
+        .playersell {
+            margin: 1rem;
+        }
+     }
+
 /* Footer section */
 
    footer {
       margin-top: 1rem;
       width:100%;
       background-color: black;
-      height: 9rem;
+      height: 9rem; 
    }
 
    .footercontainer {
@@ -414,7 +548,7 @@ a:hover {
    }
 
    .socialmediacon {
-      width: 98%;
+      width: 100%;
       margin: 2%;
       display: flex;
       flex-wrap: wrap;
@@ -423,7 +557,7 @@ a:hover {
    }
 
    .sponsorscon {
-    width: 98%;
+    width: 100%;
     margin: 2%; 
     display: flex;
     flex-wrap: wrap;
@@ -433,9 +567,12 @@ a:hover {
  }
 
    .media {
-      width: 8%;
-      height: 3.5rem;
+      width: 6%;
+      height: 100%;
       margin-left: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
    }
 
    .media img {
@@ -444,11 +581,11 @@ a:hover {
    }
 
    .teamviewer{
-      width: 32%;
+      width: 25%;
    }
 
    .dxc {
-      width: 17%;
+      width: 13%;
    }
 
    .rightspart {
@@ -468,5 +605,37 @@ a:hover {
       font-size: 0.95rem;
       font-family: 'Bebas Neue', cursive;
       letter-spacing: 0.02rem;
+      clear:
    }
 
+   @media only screen and (min-width:400px) and (max-width: 700px) and (max-width: 960px) {
+    .media {
+      width: 20%;
+      height: 100%;
+      margin: 0 0.5rem;
+    }
+    .footer {
+      height: 50%;
+    }
+    .sponsorscon:last-child {
+        margin-right: 0.5rem;
+    }
+
+    .rightsreserved span {
+        font-size: 0.8rem;
+    }
+ }
+
+  @media only screen and (max-width: 400px) {
+     .socialpart {
+        display: none;
+     }
+
+     footer {
+        height: 4rem;
+     }
+
+     .rightspart {
+        height: 100%;
+     }
+  }
